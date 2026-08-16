@@ -53,7 +53,7 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:volume-off$$
+  - AC DESKTOP SHOW ALL WINDOWS
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-control$$
@@ -68,7 +68,7 @@ layers:
   LAYER1:
   - $$mdi:keyboard-esc$$
   - $$mdi:brightness-7$$
-  - Ctl+BRI INC
+  - BRI INC
   - AC DESKTOP SHOW ALL WINDOWS
   - Gui+$$mdi:keyboard-space$$
   - '&spotlight_cmd4'
@@ -118,7 +118,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:volume-off$$
+  - AC DESKTOP SHOW ALL WINDOWS
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
