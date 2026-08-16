@@ -103,7 +103,7 @@ layers:
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - '~'
+  - {t: '`', s: '~'}
   - \
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - RGB OFF
