@@ -97,6 +97,8 @@
             #binding-cells = <0>;
             bindings = <&kp UP &kp UP &kp UP &kp UP &kp UP>;
             label = "UP_5";
+            tap-ms = <0>;
+            wait-ms = <0>;
         };
     };
 
