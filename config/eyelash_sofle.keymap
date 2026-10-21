@@ -107,6 +107,7 @@
             bindings = <&kp DOWN &kp DOWN &kp DOWN &kp DOWN &kp DOWN>;
             label = "DOWN_5";
             tap-ms = <1>;
+            wait-ms = <0>;
         };
 
         left_5: left_5 {
