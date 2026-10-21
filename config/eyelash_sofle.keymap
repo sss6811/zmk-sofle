@@ -125,6 +125,34 @@
             label = "RIGHT_5";
             tap-ms = <1>;
         };
+
+        code_folding_fold: code_folding_fold {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LG(LEFT_ARROW))>;
+            label = "CODE_FOLDING_FOLD";
+        };
+
+        code_folding_unfold: code_folding_unfold {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LG(RIGHT))>;
+            label = "CODE_FOLDING_UNFOLD";
+        };
+
+        move_to_end_of_block: move_to_end_of_block {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LG(DOWN))>;
+            label = "MOVE_TO_END_OF_BLOCK";
+        };
+
+        move_to_beginning_of_block: move_to_beginning_of_block {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LG(UP))>;
+            label = "MOVE_TO_BEGINNING_OF_BLOCK";
+        };
     };
 
     keymap {
@@ -146,11 +174,11 @@
 
         layer_1 {
             bindings = <
-&kp ESCAPE      &kp C_BRI_DEC  &kp C_BRI_INC  &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp LG(SPACE)  &spotlight_cmd4    &mmv MOVE_UP     &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp C_VOL_DN  &kp C_VOLUME_UP  &trans
-&kp TAB         &none          &none          &up_5                              &none          &none              &mmv MOVE_DOWN   &kp MINUS   &kp EQUAL         &kp UP      &trans        &trans           &kp RIGHT_BRACKET
-&kp LEFT_SHIFT  &none          &left_5        &down_5                            &right_5       &none              &mmv MOVE_LEFT   &trans      &kp LEFT          &kp DOWN    &kp RIGHT     &kp GRAVE        &kp BSLH
-&mo 2           &none          &none          &kp LG(C)                          &kp LG(V)      &none              &mmv MOVE_RIGHT  &none       &none             &none       &none         &none            &none
-&none           &trans         &trans         &trans                             &trans         &trans             &mkp LCLK        &trans      &trans            &trans      &trans        &trans
+&kp ESCAPE      &kp C_BRI_DEC  &kp C_BRI_INC  &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp LG(SPACE)         &spotlight_cmd4                &mmv MOVE_UP     &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp C_VOL_DN  &kp C_VOLUME_UP  &trans
+&kp TAB         &none          &none          &up_5                              &code_folding_fold    &move_to_beginning_of_block    &mmv MOVE_DOWN   &kp MINUS   &kp EQUAL         &kp UP      &trans        &trans           &kp RIGHT_BRACKET
+&kp LEFT_SHIFT  &none          &none          &down_5                            &code_folding_unfold  &move_to_end_of_block          &mmv MOVE_LEFT   &trans      &kp LEFT          &kp DOWN    &kp RIGHT     &kp GRAVE        &kp BSLH
+&mo 2           &none          &none          &kp LG(C)                          &kp LG(V)             &none                          &mmv MOVE_RIGHT  &none       &none             &none       &none         &none            &none
+&none           &trans         &trans         &trans                             &trans                &trans                         &mkp LCLK        &trans      &trans            &trans      &trans        &trans
             >;
 
             sensor-bindings = <&scroll_encoder>, <&rsr_trans>;
