@@ -106,6 +106,7 @@
             #binding-cells = <0>;
             bindings = <&kp DOWN &kp DOWN &kp DOWN &kp DOWN &kp DOWN>;
             label = "DOWN_5";
+            tap-ms = <1>;
         };
 
         left_5: left_5 {
@@ -113,6 +114,7 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT>;
             label = "LEFT_5";
+            tap-ms = <1>;
         };
 
         right_5: right_5 {
@@ -120,6 +122,7 @@
             #binding-cells = <0>;
             bindings = <&kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT>;
             label = "RIGHT_5";
+            tap-ms = <1>;
         };
     };
 
